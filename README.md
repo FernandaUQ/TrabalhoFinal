@@ -4,12 +4,17 @@ Projeto acadêmico com finalidade de avaliar conhecimento sobre um sistema que c
 --------------------------------------------------------Enunciado-------------------------------------------------------------------------
 
 Disciplina: Programação Orientada a Objetos
+
 Professor: Rosana Cavalcante de Oliveira
 
 
 Orientações:
+
 1) Leia o conteúdo das aulas de 4 a 8
+
 2) Faça o upload do arquivo.java
+
+
 Em uma universidade tem dois tipos de Funcionários: Diretores ou Professores. Um
 professor tem nome, matrícula, cpf, salário, ano de admissão. Em professor deve ter um
 método getImpostoDeRenda, que deverá retornar o imposto de renda do professor (20%
