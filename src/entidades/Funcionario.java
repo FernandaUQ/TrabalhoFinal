@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class Funcionario {
 	
-	private long Matricula;
-	private Long CPF;
-	private String Nome;
-	private Double Salario;
-	private Date Data_Admissão;
+	protected long Matricula;
+	protected Long CPF;
+	protected String Nome;
+	protected Double Salario;
+	protected Date Data_Admissão;
 	
 	public Funcionario () {
 		
@@ -91,7 +91,7 @@ public class Funcionario {
 	}
 
 	public Double getImpostoRenda () {
-		Integer porcentagem = null;
+		Double porcentagem = null;
 		return Salario*porcentagem;
 		
 	}
