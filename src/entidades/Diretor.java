@@ -1,5 +1,6 @@
 package entidades;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Diretor extends Funcionario{
@@ -22,11 +23,14 @@ public class Diretor extends Funcionario{
 		double porcentagem = 0.23;
 		return Salario*porcentagem;
 	}
-
+	
+	
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	
 	@Override
 	public String toString() {
-		return "Dados do Funcionario \nMatricula: " + Matricula + "\nCPF: " + CPF + "\nNome: " + Nome + "\nSalario: " + Salario
-				+ "\nData da Admissão: " + Data_Admissão + "\nImposto de Renda: " + getImpostoRenda() + "\n";
+		return "Dados do Funcionario \nMatricula: " + Matricula + "\nCPF: " + CPF + "\nNome: " + Nome + "\nSalario: " + String.format("%.2f" , Salario)
+				+ "\nData da Admissão: " + sdf.format(Data_Admissão) + "\nImposto de Renda: " + String.format("%.2f" ,getImpostoRenda()) + "\n";
 	}
 
 	
