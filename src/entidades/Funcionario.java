@@ -98,8 +98,8 @@ public class Funcionario {
 
 	@Override
 	public String toString() {
-		return "Dados do Funcionario \nMatricula=" + Matricula + "\nCPF=" + CPF + "\nNome=" + Nome + "\nSalario=" + Salario
-				+ "\nData da Admissão=" + Data_Admissão + "\nImposto de Renda=" + getImpostoRenda() + "\n";
+		return "Dados do Funcionario \nMatricula: " + Matricula + "\nCPF: " + CPF + "\nNome: " + Nome + "\nSalario: " + Salario
+				+ "\nData da Admissão: " + Data_Admissão + "\nImposto de Renda: " + getImpostoRenda() + "\n";
 	}
 	
 	
