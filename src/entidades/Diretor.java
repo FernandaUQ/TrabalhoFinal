@@ -11,7 +11,7 @@ public class Diretor extends Funcionario{
 		super();
 	}
 
-	public Diretor(long matricula, Long cpf, String nome, Double salario, Date data_Admissão) {
+	public Diretor(Long matricula, Long cpf, String nome, Double salario, Date data_Admissão) {
 		super(matricula, cpf, nome, salario, data_Admissão);
 
 	}

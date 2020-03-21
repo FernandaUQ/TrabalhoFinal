@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Funcionario {
 	
-	protected long Matricula;
+	protected Long Matricula;
 	protected Long CPF;
 	protected String Nome;
 	protected Double Salario;
@@ -15,7 +15,7 @@ public class Funcionario {
 		
 	}
 
-	public Funcionario(long matricula, Long cpf, String nome, Double salario, Date data_Admissão) {
+	public Funcionario(Long matricula, Long cpf, String nome, Double salario, Date data_Admissão) {
 		Matricula = matricula;
 		CPF = cpf;
 		Nome = nome;
@@ -23,7 +23,7 @@ public class Funcionario {
 		Data_Admissão = data_Admissão;
 	}
 
-	public long getMatricula() {
+	public Long getMatricula() {
 		return Matricula;
 	}
 

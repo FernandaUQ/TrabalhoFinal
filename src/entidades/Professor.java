@@ -10,7 +10,7 @@ public class Professor extends Funcionario {
 	}
 	
 	
-	public Professor(long matricula, Long cpf, String nome, Double salario, Date data_Admissão) {
+	public Professor(Long matricula, Long cpf, String nome, Double salario, Date data_Admissão) {
 		super(matricula, cpf, nome, salario, data_Admissão);
 	}
 	
