@@ -16,6 +16,15 @@ public class Diretor extends Funcionario{
 
 	}
 	
+	@Override
+	public int hashCode() {
+		return super.hashCode();
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		return super.equals(obj);
+	}
 	
 
 	@Override
@@ -23,15 +32,14 @@ public class Diretor extends Funcionario{
 		double porcentagem = 0.23;
 		return Salario*porcentagem;
 	}
-	
-	
-	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-	
+
+
 	@Override
 	public String toString() {
-		return "Dados do Funcionario \nMatricula: " + Matricula + "\nCPF: " + CPF + "\nNome: " + Nome + "\nSalario: " + String.format("%.2f" , Salario)
-				+ "\nData da Admissão: " + sdf.format(Data_Admissão) + "\nImposto de Renda: " + String.format("%.2f" ,getImpostoRenda()) + "\n";
+		return super.toString();
 	}
+	
+	
 
 	
 	

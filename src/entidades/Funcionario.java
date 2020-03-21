@@ -101,8 +101,8 @@ public class Funcionario {
 	
 	@Override
 	public String toString() {
-		return "Dados do Funcionario \nMatricula: " + Matricula + "\nCPF: " + CPF + "\nNome: " + Nome + "\nSalario: " + String.format("%.2f" , Salario)
-				+ "\nData da Admissão: " +(sdf.format( Data_Admissão)) + "\nImposto de Renda: " + String.format("%.2f" ,getImpostoRenda()) + "\n";
+		return "------------------------------\nDados do Funcionario \n------------------------------\n Matricula: " + Matricula + "\nCPF: " + CPF + "\nNome: " + Nome + "\nSalario: " + String.format("%.2f" , Salario)
+				+ "\nData da Admissão: " +(sdf.format( Data_Admissão)) + "\nImposto de Renda: " + String.format("%.2f" ,getImpostoRenda()) + "\n------------------------------\n";
 	}
 	
 	

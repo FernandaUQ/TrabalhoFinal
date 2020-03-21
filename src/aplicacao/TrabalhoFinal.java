@@ -15,13 +15,16 @@ public class TrabalhoFinal {
 
 	public static void main(String[] args) throws ParseException {
 		
-		String Continuar;
+		
+		Double totalImposto = null;
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		Scanner sc = new Scanner(System.in);
 		
 		List<Funcionario> func = new ArrayList<Funcionario>();
 		
 		
+		
+		int Continuar;
 		
 		do {
 			
@@ -37,7 +40,7 @@ public class TrabalhoFinal {
 			sc.nextLine();
 			
 			System.out.println("Nome:  ");
-			String Nome =(sc.nextLine());
+			String Nome =(sc.next());
 			sc.nextLine();
 			
 			System.out.println("Salário:  ");
@@ -48,26 +51,28 @@ public class TrabalhoFinal {
 			Date Data_Admissão = (sdf.parse(sc.next()));
 			sc.nextLine();
 			
-			System.out.println("Informe a função: (Professor/Diretor)");
-			String funcao = sc.nextLine();
+			System.out.println("Informe a função: (1-Professor/2-Diretor)");
+			int funcao = sc.nextInt();
 			sc.nextLine();
 			
-			if (funcao == "Professor") {
+			if (funcao == 1) {
 				func.add(new Professor(matricula, cpf, Nome, Salario, Data_Admissão));
-			}else {
+			}if(funcao ==2) {
 				func.add(new Diretor(matricula, cpf, Nome, Salario, Data_Admissão));
 			}
 			
-			
-			System.out.println("Deseja cadastrar mais funcionarios? (Sim/Não)");
-			Continuar = sc.nextLine();
+			System.out.println("Deseja cadastrar mais funcionarios? (1-Sim/2-Não)");
+			Continuar = sc.nextInt();
 			sc.nextLine();
-		} while (Continuar == "Sim");
+		} while (Continuar != 2);
 		
 		for (Funcionario funcionario : func) {
 			System.out.println(funcionario.toString());
+			totalImposto =+ funcionario.getImpostoRenda();
 		}
 		
+		System.out.println("Média do Imposto de Renda: " + String.format("%.2f",totalImposto/func.size()));
+		System.out.println("Valor total em Imposto de Renda: " + String.format("%.2f", totalImposto));
 		
 		 sc.close();
 	}

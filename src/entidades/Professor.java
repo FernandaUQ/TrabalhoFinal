@@ -13,6 +13,19 @@ public class Professor extends Funcionario {
 	public Professor(long matricula, Long cpf, String nome, Double salario, Date data_Admissão) {
 		super(matricula, cpf, nome, salario, data_Admissão);
 	}
+	
+	
+
+	@Override
+	public int hashCode() {
+		return super.hashCode();
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		return super.equals(obj);
+	}
 
 
 	@Override
@@ -22,13 +35,13 @@ public class Professor extends Funcionario {
 	}
 	
 	
-	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-
+	
 	@Override
 	public String toString() {
-		return "Dados do Funcionario \nMatricula: " + Matricula + "\nCPF: " + CPF + "\nNome: " + Nome + "\nSalario: " + String.format("%.2f" , Salario)
-				+ "\nData da Admissão: " + sdf.format(Data_Admissão) + "\nImposto de Renda: " + String.format("%.2f" ,getImpostoRenda()) + "\n";
+		return super.toString();
 	}
+
+	
 
 	
 	
